@@ -8546,7 +8546,8 @@ a.close.disabled
 
 .bg-primary
 {
-    background-color: #008aff !important;
+    /* background-color: #B5835E !important; */
+    background-color: black !important;
 }
 
 a.bg-primary:hover,

@@ -52,6 +52,55 @@
         color: black !important;
         }
 
+        .confetti {
+          width: 15px;
+          height: 15px;
+          background-color: #f2d74e;
+          position: absolute;
+          left: 50%;
+          animation: confetti 5s ease-in-out -2s infinite;
+          transform-origin: left top;
+        }
+        .confetti:nth-child(1) {
+          background-color: #f2d74e; left: 10%; animation-delay: 0;
+        }
+        .confetti:nth-child(2) {
+          background-color: #95c3de; left: 20%; animation-delay: -5s;
+        }
+        .confetti:nth-child(3) {
+          background-color: #ff9a91; left: 30%; animation-delay: -3s;
+        }
+        .confetti:nth-child(4) {
+          background-color: #f2d74e; left: 40%; animation-delay: -2.5s;
+        }
+        .confetti:nth-child(5) {
+          background-color: #95c3de; left: 50%; animation-delay: -4s;
+        }
+        .confetti:nth-child(6) {
+          background-color: #ff9a91; left: 60%; animation-delay: -6s;
+        }
+        .confetti:nth-child(7) {
+          background-color: #f2d74e; left: 70%; animation-delay: -1.5s;
+        }
+        .confetti:nth-child(8) {
+          background-color: #95c3de; left: 80%; animation-delay: -2s;
+        }
+        .confetti:nth-child(9) {
+          background-color: #ff9a91; left: 90%; animation-delay: -3.5s;
+        }
+        .confetti:nth-child(10) {
+          background-color: #f2d74e; left: 100%; animation-delay: -2.5s;
+        }
+
+        @keyframes confetti {
+          0% { transform: rotateZ(15deg) rotateY(0deg) translate(0,0); }
+          25% { transform: rotateZ(5deg) rotateY(360deg) translate(-5vw,20vh); }
+          50% { transform: rotateZ(15deg) rotateY(720deg) translate(5vw,60vh); }
+          75% { transform: rotateZ(5deg) rotateY(1080deg) translate(-10vw,80vh); }
+          100% { transform: rotateZ(15deg) rotateY(1440deg) translate(10vw,110vh); }
+        }
+        
+
     </style>
     <script>
         window.addEventListener("load", function() {
@@ -153,6 +202,7 @@
                     <figure class="w-100">
                         <!-- <img alt="Image placeholder" src="https://images.ctfassets.net/f7tuyt85vtoa/aLpA08MU0o95DOwirZoOc/41f82697e0dde05e54d7dd9b095e5f63/PEts-like-humans-article-COVER.jpg" class="img-fluid mw-md-120"> -->
                         <img alt="Image placeholder" src="assets/img/svg/illustrations/hero.svg" class="img-fluid mw-md-120">
+                        <!-- <img alt="Image placeholder" src="https://assets.petco.com/petco/image/upload/f_auto,q_auto:best,dpr_2.0,h_382/holiday-bopus-hp-hero-110121-533w-382h" class="img-fluid mw-md-120"> -->
                         
                     </figure>
                 </div>
@@ -180,6 +230,85 @@
             </div>
         </div>
     </section>
+
+    <section class="slice slice-lg pt-10 bg-primary">
+        <!-- SVG separator -->
+        <div class="shape-container shape-line shape-position-top shape-orientation-inverse">
+            <svg width="2560px" height="100px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 2560 100" style="enable-background:new 0 0 2560 100;" xml:space="preserve" class="">
+                <polygon points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+        </div>
+        <!-- Container -->
+        <div class="container">
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="row row-grid">
+                
+                <div class="col-lg-8">
+                    <!-- Badge -->
+                    <span class="badge badge-success badge-pill">🎉 Inauguration Offers</span>
+                    <!-- Title -->
+                    <h2 class="mt-4 text-white">Save upto 30%</h2>
+                    <p class="text-sm text-white">12 Dec - 20 Dec</p>
+                    <!-- Text -->
+                    <p class="lead text-white lh-190">
+                        It gives us immense pleasure to announce that our brand new store is coming up in Ahmedabad on 12 Dec. You are cordially invited to the opening ceremony. 
+                        Don't forget to bring your furry ones 🤟
+                    </p>
+                </div>
+
+                <!-- <div class="col-lg-4">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.528821969998!2d72.52374751505592!3d23.04106632141829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84b3e5da5dcf%3A0x12240eb767e0611d!2sAdvait%20Complex%2C%20Sandesh%20Press%20Rd%2C%20Vastrapur%2C%20Ahmedabad%2C%20Gujarat%20380015%2C%20India!5e0!3m2!1sen!2sus!4v1639016934623!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div> -->
+            </div>
+            <!-- Milestones -->
+            <div class="row mt-6">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="card shadow-lg rounded-lg border-0 mb-sm-0">
+                                <div class="p-4 text-center text-sm-left">
+                                    <h3 class="mb-0">10%</h3>
+                                    <p class="text-muted mb-0">
+                                        Pet food
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card shadow-lg rounded-lg border-0 mb-sm-0">
+                                <div class="p-4 text-center text-sm-left">
+                                    <h3 class="mb-0">20%</h3>
+                                    <p class="text-muted mb-0">
+                                        Accessories
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card shadow-lg rounded-lg border-0 mb-sm-0">
+                                <div class="p-4 text-center text-sm-left">
+                                    <h3 class="mb-0">30%</h3>
+                                    <p class="text-muted mb-0">
+                                        Spa
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="slice slice-lg pt-lg-6 pb-0 pb-lg-6 bg-section-secondary" style="background-image: url('assets/img/svg/illustrations/paws.svg');">
         <div class="container" >
             <!-- Title -->
